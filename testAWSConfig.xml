@@ -1,0 +1,20 @@
+<collector probe_driver="AWSConfigRuleProbe" id="awstest" cmid="awstest">
+    <TestCases>
+        <TestCase>
+            <ID>1</ID>
+            <TestInstance Operation="config">
+                <Input>
+                    <Item key="aws_access_key" value="XXX"/>
+                    <Item key="aws_secret_access_key" value="XXX"/>
+                    <Item key="region" value="eu-west-1"/>
+                </Input>
+            </TestInstance>
+            <TestInstance Operation="rule">
+                <Input>
+                    <Item key="rulename" value="XXX"/>
+                </Input>
+            </TestInstance>
+        </TestCase>
+
+    </TestCases>
+</collector>
